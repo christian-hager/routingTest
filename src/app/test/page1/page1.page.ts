@@ -12,6 +12,12 @@ export class Page1Page implements OnInit {
 
 ngOnInit(){}
 
+goTohome() {
+  this.router.navigate(["../", "home"], {
+    relativeTo: this.route
+  });
+}
+
   goToPage3() {
     this.router.navigate(["page3"], {
       relativeTo: this.route
